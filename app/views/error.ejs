@@ -1,0 +1,1436 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="gbk" />
+  <meta name="robots" content="all" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="Copyright" content="TENCNET" />
+  <meta name="author" content="Tencent-TGideas" />
+  <meta name="Description" content="英雄联盟,无极剑圣的斩星魔剑" />
+  <meta name="Keywords" content="英雄联盟,无极剑圣的斩星魔剑,珍惜守卫限时销售,赠魔法星尘" />
+  <meta http-equiv="x-ua-compatible" content="IE=8" >
+  <script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.0.min.js"></script>
+  <script src="http://ossweb-img.qq.com/images/lol/hns/RALFSHEN_HEROSKIN.js"></script>
+  <title>菲奥娜的魔法星尘 - 英雄联盟官方网站 - 腾讯游戏</title>
+  <!-- 设计：帅呆 | 重构：小倪 | 创建：20170106 | 团队博客：http://tgideas.qq.com -->
+  <link href="css/common.css" type="text/css" rel="stylesheet" />
+  <style>
+    #GetItem2{width:970px; height:576px; position:fixed; left:50%; top:50%; margin:-306px 0 0 -485px; z-index:999; overflow:hidden;}
+    #GetItem2 ul{ width:755px; overflow:hidden; padding:15px 0 0 5px;}
+    #GetItem2 li{ width:146px; height:240px; font-size:12px; float:left; color:#fff; margin:0px 5px 0px 0px; position:relative;}
+    #GetItem2 li div{width:146px; height:195px; overflow:hidden;}
+    #GetItem2 li span{ display:block; text-align:center; line-height: 18px; font-size:13px;
+      padding-top: 5px;}
+    #GetItem2 li img{ width:138px;}
+    #GetItem2_info{ height:500px; padding:0px;}
+    .ew ul{ width:120px; height:260px; margin:5px 0 0 7px;}
+    #GetItem2 .ew span{ font-weight:bold; font-size:16px;}
+    .ew{border: 8px solid #2A6EBA;
+      background: #244786;
+      position: absolute;
+      width: 170px;
+      height: 335px;
+      bottom: 0px;
+      right: 195px;
+    }
+    .ts-cover{
+      position: absolute;
+      width: 146px;
+      height: 195px;
+      background: url(http://ossweb-img.qq.com/images/lol/act/a20170710stars/gold_cover_146x195.gif) 0 0 no-repeat;
+      top: 0;
+      left: 0;}
+    .pop_tc{ display:none; position:fixed; width:100%; height:100%; z-index:109; background:#000;filter:alpha(opacity=50);opacity: 0.5; top: 0; left: 0;}
+  </style>
+</head>
+<body style="position:relative;padding-top:0;">
+<div class="pop_tc"></div>
+<div class="wrap">
+  <div class="header">
+    <a class="logo" href="#">英雄联盟官方网站</a>
+    <div class="header-inner layout">
+      <h1 class="none">无极剑圣的斩星魔剑</h1>
+      <h4 class="header_h4">珍稀守卫限时销售，赠<span class="co_yellow fweight">魔法星尘</span></h4>
+      <!-- <h5 class="header_h5">活动时间：2017年01月24日至2017年02月04日</h5> -->
+      <ul class="nav">
+        <li class="nav-1"><a href="#rules">活动规则</a></li>
+        <li class="nav-2"><a  target="_blank">查询佳肴内容</a></li>
+        <li class="nav-3"><a href="javascript:;">道具购买记录</a></li>
+        <li class="nav-4"><a href="javascript:;">道具领取记录</a></li>
+      </ul>
+      <div class="login-box">
+        <p id="unlogin" style="display:block;">欢迎您，亲爱的 <a>麻瓜藤不疼</a> 您当前绑定的大区是：艾欧尼亚 电信</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="S1" class="step-1">
+    <div class="step1-inner layout">
+      <!--充值钻石 S-->
+      <p class="step-1-tips">钻石可以兑换<strong>珍稀守卫皮肤 </strong>，同时获赠<strong>魄罗佳肴 </strong></p>
+      <h3 class="none">01 充值钻石</h3>
+      <div class="step-1-item">
+        <div class="btn-curr" id="buy_btn_curr">
+          <a class="diamond-num num-50" href="javascript:;"  id="pay_50"><span>充值</span><em>50</em><i>颗</i></a>
+          <a class="diamond-num num-100" href="javascript:;"  id="pay_100"><span>充值</span><em>100</em><i>颗</i></a>
+          <a class="diamond-num num-500" href="javascript:;"  id="pay_500"><span>充值</span><em>500</em><i>颗</i></a>
+        </div>
+        <div class="btn-hidden" id="buy_btn_hidden">
+          <a class="num-50 diamond-gray" href="javascript:;"><span>充值</span><em>50</em><i>颗</i></a>
+          <a class="num-100 diamond-gray" href="javascript:;"><span>充值</span><em>100</em><i>颗</i></a>
+          <a class="num-500 diamond-gray" href="javascript:;"><span>充值</span><em>500</em><i>颗</i></a>
+        </div>
+        <input class="recharge-num" type="text" name="DiamondNum" id="DiamondNum"  maxlength="5" value="50" >
+        <span class="none">颗</span>
+        <span id="buy_info" class="btn-pay-disable"></span><a id="buy_btn" href="javascript:;"  class="btn-minor" title="确认充值">确认充值</a>
+        <i class="recharge-tips-1">请输入50的倍数</i><i class="recharge-tips-1">请输入50的倍数</i>
+      </div>
+      <!--充值钻石 E-->
+      <!-- 魅蓝面具头像 S-->
+      <div class="avatar">
+        <h3 class="none">魅蓝面具头像 15天(请在游戏商城内购买)</h3>
+        <p class="none">价格9900金币或2000点券</p>
+        <p class="none">购买即送150钻</p>
+        <a class="btn-common btn-common-big" href="javascript:;" >如何购买？</a>
+        <a class="btn-minor btn-minor1" href="javascript:;" onclick="alert('还换个啥？直接抽好么！！！')">已使用头像，领取钻石</a>
+        <i class="recharge-tips-2">单个QQ号仅能领取一次钻石</i>
+      </div>
+      <!-- 魅蓝面具头像 E-->
+    </div>
+  </div>
+
+  <div id="S2" class="step-2">
+    <div class="step2-inner layout">
+      <!-- <h3 class="none">02 钻石兑换守卫皮肤</h3>
+      <p class="tips">当前拥有<strong>钻石</strong><span id="iDiamond">50000</span>颗 <span id="BtnRef"><a href="javascript:;" >点击刷新</a></span>（如果购买钻石未到账，请刷新页面）</p>
+      <div class="step-2-item">
+          <h3 class="none">萌萌魄罗守卫 7天</h3>
+          <h5 class="none">兑换价格：50钻石</h5>
+          <p class="none">兑换即送暗影魂罗守卫</p>
+          <span class="none">兑换数量</span>
+          <input class="buy-num" type="text" name="wardSkin1" id="wardSkin1"   maxlength="3" value="1" onblur="if(this.value==''){this.value='1';};" onfocus="if(this.value=='1'){this.value='';}">
+          <a href="javascript:;" class="btn-minor" title="立即购买" onclick="alert('还换个奶汁？直接抽好么！！！')">立即兑换</a>
+      </div>
+      <div class="step-2-item step-2-item-2">
+          <h3 class="none">美味拐杖糖守卫 7天</h3>
+          <h5 class="none">兑换价格：100钻石</h5>
+          <p class="none">兑换即送河蟹陛下守卫</p>
+          <span class="none">兑换数量</span>
+          <input class="buy-num" type="text" name="wardSkin2" id="wardSkin2" onKeyDown="onlyNum();" onKeyUp="MatchNum(this.id);"  maxlength="3" value="1" onblur="if(this.value==''){this.value='1';};" onfocus="if(this.value=='1'){this.value='';}">
+          <a href="javascript:;"  class="btn-minor" title="立即购买" onclick="alert('还换个奶汁？直接抽好么！！！')">立即兑换</a>
+      </div> -->
+      <iframe src="/msg/4.0/index.php" style="width: 100%; height: 650px; border:0; "></iframe>
+      为了良好的娱乐体验就不挂广告了（个人也非常恶心广告）但是如果有兄弟想请卤煮喝酒可以支付宝: 441439958@qq.com。后面将为大家开发大礼包等更多好玩的功能
+    </div>
+  </div>
+
+  <div id="S3" class="step-3" style="position: relative;">
+    <div class="step3-inner layout">
+      <h3 class="none">魔法星尘藏惊喜</h3>
+      <p class="tips">您当前拥有 暗影魂罗守卫 <span id="iGoldNum">0</span>个&nbsp;，&nbsp;河蟹陛下守卫<span id="iColorNum">1000</span>个</p>
+      <div class="pumpkins-item">
+        <a href="javascript:;"  class="btn-common btn-commonl l"  onclick="alert('免费抽你特么还抽便宜的？？？')"><span class="pd1">使用</span><strong>1</strong><span>个</span></a>
+        <a href="javascript:;" class="btn-common btn-commonr r" onclick="alert('免费抽你特么还抽便宜的？？？')"><span class="pd2">使用</span><strong>10</strong><span>个</span></a>
+      </div>
+      <div class="pumpkins-item1">
+        <a href="javascript:;"  class="btn-common btn-commonl l" onclick="alert('免费抽你特么还抽便宜的？？？')"><span class="pd1">使用</span><strong>1</strong><span>个</span></a>
+        <a href="javascript:;" class="btn_btn btn-common btn-commonr r"><span class="pd2">使用</span><strong>10</strong><span>个</span></a>
+      </div>
+      <div class="scroll-giftlist scroll-pl20">
+        <h3>送<span> “暗影魂罗守卫” </span>可能会送你</h3>
+        <div class="scroll-giftbox" id="giftScroll1">
+          <div class="hbimg-wrap">
+            <div id="J_hbimg1Cont" class="hbimg-cont"><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/img_show1.jpg" alt="暗影魂罗守卫"></div>
+          </div>
+          <div class="scroll-btn" id="J_hbimg1">
+            <span class="on"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-giftlist">
+        <h3>送<span>“河蟹陛下守卫” </span>可能会送你</h3>
+        <div class="scroll-giftbox" id="giftScroll2">
+          <div class="hbimg-wrap">
+            <div id="J_hbimg2Cont" class="hbimg-cont1"><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/img_show2.jpg" alt="河蟹陛下守卫"></div>
+          </div>
+          <div class="scroll-btn" id="J_hbimg2">
+            <span class="on"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="S4" class="step-4 mine">
+    <div class="stuff layout">
+      <div class="stuff-tit">
+        <h3 class="none">我的物品</h3>
+        <p class="tips">物品栏中未领取的道具，可以领取至任意大区，或者参加道具合成。<br/>使用道具合成功能，可以将任意3个英雄（期限、非期限）合成一个非期限英雄，或将任意3个皮肤（期限、非期限）合成一个非期限皮肤。<br/>合成获得的道具可以领取至任意大区，或继续用于道具合成。</p>
+      </div>
+      <a class="btn-common btn-common-big check-my-good" href="javascript:;"  target="_blank">查询我的英雄和皮肤</a>
+      <a class="mix-btn" href="javascript:;" title="我要合成">我要合成奖励</a>
+
+      <!-- 神秘祥云奖励 S -->
+      <div class="scroll-stuff" id="gift_div" style="display:none">
+        <h4><strong>神秘魔法星尘</strong>奖励 <span class="stuff_t_tips"></span></h4>
+        <p class="gift-pages" id="gift_page"></p>
+        <div class="scroll-stuffbox" id="gift_list">
+          <div class="scroll-pic-box">
+            <ul class="scroll-pic">
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none.png"><a href="javascript:;" ><em class="pa giftcolor">点击查看<br>奖励</em></a></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 神秘祥云奖励 E -->
+
+      <!-- 暗影魂罗守卫奖励 S -->
+      <div class="scroll-stuff">
+        <h4><strong>暗影魂罗守卫</strong>奖励<span class="stuff_t_tips"></span></h4>
+        <p class="gift-pages" id="gold_page"></p>
+        <div class="scroll-stuffbox" id="gold_list">
+          <div class="scroll-pic-box">
+            <ul class="scroll-pic">
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none.png"><a href="javascript:;" ><em class="pa giftcolor">点击查看<br>奖励</em></a></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 暗影魂罗守卫奖励 E -->
+
+      <!-- 河蟹陛下守卫奖励 S -->
+      <div class="scroll-stuff">
+        <h4><strong>河蟹陛下守卫</strong>奖励<span class="stuff_t_tips"></span></h4>
+        <p class="gift-pages" id="color_page"></p>
+        <div class="scroll-stuffbox" id="color_list">
+          <div class="scroll-pic-box">
+            <ul class="scroll-pic">
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none.png"><a href="javascript:;" ><em class="pa giftcolor">点击查看<br>奖励</em></a></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 河蟹陛下守卫奖励 E -->
+
+      <!-- 合成栏 S -->
+      <div class="scroll-stuff">
+        <h4>合成栏<span class="stuff_t_tips"></span></h4>
+        <p class="gift-pages" id="syn_page"></p>
+        <div class="scroll-stuffbox" id="syn_list">
+          <div class="scroll-pic-box">
+            <div class="scroll-pic-box" >
+              <ul class="scroll-pic">
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none.png"><a href="javascript:;" ><em class="pa giftcolor">点击查看<br>奖励</em></a></li>
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+                <li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 合成栏 E -->
+
+    </div>
+  </div>
+
+  <div class="bottom step-5">
+
+    <!-- 其他召唤师获得 S-->
+    <div id="S5" class="other layout">
+      <h3 class="tit-spr other-tit">其他召唤师获得</h3>
+      <div id="time_list" class="scroll-stuffbox"></div>
+    </div>
+    <!-- 其他召唤师获得 E -->
+
+    <!-- 活动规则 S-->
+    <div id="rules" class="rules layout">
+      <h3 class="tit-spr rules-tit">活动规则</h3>
+      <ol class="rulelist">
+        <li>
+          <em class="ico">1</em>
+          <p>在活动页面上使用Q币充值钻石，5Q币充值50钻石。在游戏客户端购买并使用魅蓝面具头像，赠送150钻石，单个大区头像只限购买一次。充值的钻石会在页面上显示。</p>
+        </li>
+        <li>
+          <em class="ico">2</em>
+          <p>使用钻石兑换守卫皮肤，其中50钻石兑换一份“萌萌魄罗守卫（7天）”，将获得赠“暗影魂罗守卫”一份；100钻石兑换一份“美味拐杖糖守卫（7天）”，将获得赠“河蟹陛下守卫”一份。兑换多份珍稀守卫皮肤，使用时间叠加计算。</p>
+        </li>
+        <li>
+          <em class="ico">3</em>
+          <p>守卫皮肤将直接发放到绑定的帐号及大区中，从兑换时开始计算时限。</p>
+        </li>
+        <li>
+          <em class="ico">4</em>
+          <p>把魔法星尘送给小白会获得神秘道具，道具需要手动领取，支持领取到任意大区。</p>
+        </li>
+        <li>
+          <em class="ico">5</em>
+          <p>本次活动提供”送10个”功能，每次使用”送10个”功能会额外获赠并送1个对应级别的魔法星尘。</p>
+        </li>
+        <li>
+          <em class="ico">6</em>
+          <p><strong>萌萌的小白会随机对幸运的召唤师发放“神秘魔法星尘”，请召唤师们多多注意自己的道具栏。</strong></p>
+        </li>
+        <li>
+          <em class="ico">7</em>
+          <p>道具栏中未领取的道具，可以参加道具合成。道具合成功能可以将道具栏中任意3个英雄（期限、永久）合成一个随机永久英雄，任意3个皮肤（期限、永久）合成一个随机永久皮肤。合成出的道具可以领取到任意大区，也可以继续参与合成。
+          </p>
+        </li>
+        <li>
+          <em class="ico">8</em>
+          <p>领取道具之前请确认该大区是否拥有该道具，重复领取的期限道具将会叠加使用时间，重复领取的永久道具将会覆盖原道具。领取英雄、皮肤、珍稀守卫皮肤2个小时内发放到游戏中，请重新登录游戏查看。
+          </p>
+        </li>
+        <li>
+          <em class="ico">9</em>
+          <p>皮肤如果未拥有英雄，仍然可以领取到指定大区，购买了相应英雄之后即可使用。</p>
+        </li>
+        <li>
+          <em class="ico">10</em>
+          <p>在玩家被封号期间，期限道具的时长计算不会停止，请各位召唤师注意言行。</p>
+        </li>
+      </ol>
+    </div>
+    <!-- 活动规则 E-->
+
+
+  </div>
+  <!-- 活动FAQ E-->
+  <div id="faq" class="step-6">
+    <div class="faq layout">
+      <h3 class="tit-spr faq-tit">常见问题解答</h3>
+      <ul class="faqlist">
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>我如何获得钻石?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>1）在活动页面上通过Q币、微信支付、银行卡、财付通等方式充值钻石;</p>
+          <p>2）在游戏客户端购买并使用期限头像“魅蓝面具”即可前往活动页面领取钻石。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>为什么在活动页面不能购买"魅蓝面具"头像?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>目前"魅蓝面具"头像只能在游戏客户端内通过金币或者点券进行购买，成功购买并使用该头像的召唤师即可前往活动页面领取钻石到对应大区。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>皮肤和英雄的使用时限如何计算？</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>通过活动获得的英雄/皮肤分期限和非期限两种类型。例如：“皮肤 暴龙 科加斯 7天体验”代表该皮肤自领取时起，有7天的使用有效期，超过期限则无法继续使用；“皮肤 暴龙 科加斯”代表该皮肤没有时间限制，领取后可以一直使用下去。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>期限守卫皮肤和头像的时限如何计算?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>1)每个期限守卫皮肤有效期为7天，若兑换多个守卫皮肤，则其使用期限叠加计算，使用期限从领取时开始计算，即：1个为7天，2个则为7+7=14天，3个则为7+7+7=21天，依此类推;</p>
+          <p>2)期限头像“魅蓝面具”的使用期限从兑换之日起到2017年1月20日23点59分结束。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>如何获得"喂食10个"奖励?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>通过点击"送10个"按钮即可额外获赠1个对应等级的魔法星尘并自动送给小白。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>为什么我领取的皮肤一直查看没有到账?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>皮肤将在领取后的2小时内到账，也可以通过掌上英雄联盟查看皮肤到账情况。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>为什么我领取的皮肤提示不可用?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>这是一个显示错误，实际上已经领取成功，请在实际游戏对局中使用。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>为什么我领取的期限皮肤使用一次之后，之后在游戏内不可使用?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>只要期限皮肤仍在有效期内即可使用。请召唤师在每次选择期限皮肤前，先切换至经典皮肤，再选择期限皮肤，即可在游戏对局内正常使用。</p>
+        </li>
+        <li>
+          <em class="ico cq">Q:</em>
+          <p>我领取了一个7天的期限皮肤，第二天因为某些原因被封号了30天。请问账号解封后，我的期限皮肤还能继续使用吗?</p>
+        </li>
+        <li class="pb15">
+          <em class="ico">A:</em>
+          <p>封号期间，期限道具的时长计算不会停止，所以30天封号期结束之后，之前获得的一个7天期限皮肤已经过期失效，不能继续使用。请各位召唤师注意言行，坚持正义。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id="J_sideNav" class="side-nav icon-side-nav">
+  <a href="#S1" class="nbtp">充值钻石</a>
+  <a href="#S2">兑换守卫皮肤</a>
+  <a href="#S3">送魔法星尘</a>
+  <a href="#S4">领取奖励</a>
+  <a href="#S5">其他召唤师获得</a>
+  <a href="#rules">活动规则</a>
+  <a href="#faq">常见问题</a>
+  <a href="http://kf.qq.com/faq/1205187FbI3Q160523ANJBNb.html">联系客服</a>
+</div>
+
+<div class="pop pop-history" id="popupBox" style="display:none">
+  <a href="javascript:;" class="pop-close">×</a>
+  <div class="pop-con tc">
+    <h3 class="pop-title" id="boxInfo"></h3>
+    <div class="pop-main">
+      <div class="pop-table-tit ovh"><span class="w210">购买时间</span><span class="w330">购买道具及数量</span><span class="w210">领取大区</span></div>
+      <div class="pop-table ovh" id="target_list"></div>
+      <div class="pagination" id="div_page_roller"></div>
+    </div>
+  </div>
+</div>
+<!-- 道具领取记录弹层 E -->
+
+<!-- 开1个 S -->
+<div class="pop pop-one" id="GetItem1" style="display:none">
+  <a href="javascript:;" class="pop-close">×</a>
+  <div class="pop-con tc">
+    <h3 class="pop-title" id="GetItem1_title"></h3>
+    <div class="pop-main" id="GetItem1_info"></div>
+  </div>
+</div>
+<!-- 开1个 E -->
+
+<!-- 开10个 S -->
+<div class="pop pop-ten" style="display:none;" id="GetItem2">
+  <a href="javascript:;" class="pop-close x_hide" title="关闭" style="top:55px; right:-12px">×</a>
+  <div class="pop-con" style="width:775px;">
+    <h3 class="pop-title" id="GetItem2_title">您的运气不错，打开10个河蟹陛下守卫后发现：</h3>
+    <div class="pop-main" id="GetItem2_info">
+      <ul></ul>
+    </div>
+    <div class="ew" style="display:none;">
+      <div class="ew_txt" style="font-size:16px; color:#fff; font-weight:bold; padding:20px 0 0 21px; text-align:left;">恭喜！额外赠送您<br/><span style="color:#ffe61b">河蟹陛下守卫</span>一个</div>
+      <ul></ul>
+    </div>
+  </div>
+  <!-- 开10个 E -->
+
+  <!-- 开多个道具 S -->
+  <div class="pop pop-ten pop-five" style="display:none" id="GetItem3">
+    <a href="javascript:;" class="pop-close blue-close" title="关闭">×</a>
+    <div class="pop-con">
+      <h3 class="pop-title" id="GetItem3_title"></h3>
+      <div class="pop-main" id="GetItem3_info"></div>
+    </div>
+  </div>
+  <!-- 神秘南瓜灯开出物品 E -->
+
+  <!-- 合成物品 E -->
+  <div class="pop pop-mixture" id="popDia02" style="display:none">
+    <a class="pop-close blue-close" href="javascript:;" title="关闭">×</a>
+    <h3 class="pop-title">合成物品</h3>
+    <div class="pop-con">
+      <div class="bd">
+
+        <div class="mixture-list-item">
+          <h3>选择 已有的英雄列表</h3>
+          <div class="listbox mix-inner" id="SynHeroList"></div>
+        </div>
+
+        <div class="mixture-list-item">
+          <h3>选择 已有的皮肤列表</h3>
+          <div class="listbox mix-inner" id="SynSkinList"></div>
+        </div>
+
+        <div class="mixture-list-item mixture-list-last">
+          <h3>已选择 待合成道具</h3>
+          <div class="bd mix-inner">
+            <input id="SynType" name="SynType" type=hidden>
+            <input id="item1" name="item1" type=hidden>
+            <input id="item2" name="item2" type=hidden>
+            <input id="item3" name="item3" type=hidden>
+            <ul class="mix-pic">
+              <li id="itempic1"></li>
+              <li id="itempic2"></li>
+              <li id="itempic3"></li>
+            </ul>
+            <p class="t_c">任意<span class="cyellow">3个皮肤</span>或<span class="cyellow">英雄</span>可合成一个普通英雄或皮肤。</p>
+            <ul class="mix-last-list">
+              <li id="SynItem1"></li>
+              <li id="SynItem2"></li>
+              <li id="SynItem3"></li>
+            </ul>
+            <a class="btn-common-yel" href="javascript:;">自动加入期限道具</a>
+            <a class="btn-minor-blue" href="javascript:;">立即合成</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 合成物品 E -->
+
+  <!-- 温馨提示 -->
+  <div id="sys" class="pop pop-txt" style="display:none">
+    <div class="pop-con">
+      <h4>温馨提示</h4>
+      <div class="bd">
+        <div id="sys_info"></div>
+      </div>
+    </div>
+    <a class="pop-close" href="javascript:;"  title="关闭">×</a>
+  </div>
+
+  <!--温馨提示-->
+  <div id="succ" class="pop pop-txt" style="display:none">
+    <div class="pop-con">
+      <h4>温馨提示</h4>
+      <div class="bd">
+        <span id="succ_info"></span>
+        <div class="btn-wrapper">
+          <a class="btn-small-blue" href="javascript:;">确定</a>
+        </div>
+      </div>
+    </div>
+    <a class="pop-close" href="javascript:;" title="关闭">×</a>
+  </div>
+
+  <div id="verification" class="pop pop-txt" style="display:none">
+    <div class="pop-con">
+      <h4>腾讯安全验证中心</h4>
+      <div class="bd">
+        <iframe id="safe_iframe" frameborder="no" scrolling="no" width="400" height="300"></iframe>
+      </div>
+    </div>
+    <a class="pop-close" href="javascript:;"  title="关闭">×</a>
+  </div>
+
+  <!-- 关闭购买提示 -->
+  <div class="pop pop-txt" id="pay_close" style="display:none">
+    <div class="pop-con">
+      <h4>温馨提示:</h4>
+      <div class="bd">亲爱的召唤师，您好！ <br>因为不可抗拒的原因， 暂时关闭购买。 <br>已经购买的用户可以继续召唤、领取、合成您的道具<br>祝您新年快乐！</div>
+    </div>
+    <a class="pop-close" href="javascript:;"  title="关闭">×</a>
+  </div>
+
+  <!-- 如何购买头像  -->
+  <div class="pop pop-buy-tips" style="display:none" id="J_howBuy">
+    <a href="javascript:;"  class="pop-close" title="关闭">×</a>
+    <div class="pop-con">
+      <h3 class="pop-title">如何购买头像？</h3>
+      <p><img src="http://ossweb-img.qq.com/images/lol/act/a20151119orianna/buy_tips.jpg"></p>
+      <a class="btn-common" href="javascript:;">立即领取</a>
+    </div>
+  </div>
+
+  <!--领取确认-->
+  <div id="sendItem" class="pop pop-txt" style="display:none">
+    <div class="pop-con">
+      <h4>温馨提示: <span>如果您想领取至别的大区，请点击</span><a href='javascript:;' id="sendChang">更换大区</a></h4>
+      <div class="bd">
+        <p class="normal-tips send-normal-tips" id="item_info"></p>
+        <p class="btn-wrapper">
+          <a class="btn-small-blue" href="javascript:;" id="sendBtn">确定</a>
+          <a class="btn-small-yel" href="javascript:;" id="CheckItem">检查是否拥有</a>
+        </p>
+        <p class="normal-tips" id="item_ext"></p>
+      </div>
+    </div>
+    <a class="pop-close" href="javascript:;" title="关闭">×</a>
+  </div>
+
+  <textarea style="display:none" id="rTmp_jst">
+	<table>
+		{for p in data}
+			<tr>
+				<td width="210">${p.dtBuyTime} </td>
+        <td width="330">${p.vInfo}</td>
+        <td width="210">${p.Send}</td>
+      </tr>
+		{forelse}
+			<tr><td width="750">暂无信息</td></tr>
+		{/for}
+	</table>
+</textarea>
+
+  <textarea style="display:none" id="rUserGet_jst">
+	<table>
+		{for p in list}
+			<tr>
+				<td width="210">${p.dtTime} </td>
+        <td width="330">${p.vInfo}</td>
+        <td width="210">${p.Send}</td>
+      </tr>
+		{forelse}
+			<tr><td>暂无信息</td></tr>
+		{/for}
+	</table>
+</textarea>
+
+  <textarea style="display:none" id="itemlist_jst">
+	<a class="prev-btn" href="javascript:;">上一页</a>
+	<a class="next-btn" href="javascript:;">下一页</a>
+	<div class="scroll-pic-box">
+		<ul class="scroll-pic">
+			{for p in list}
+				{if p.iType == "0"}
+					<li id="${p.vSerialNo}">
+				{else}
+					<li class="pic-gray">
+				{/if}
+				<a href="javascript:;" onclick="${p.FuncGet}">
+					<span id="${p.vSerialNo}_img">
+						<i class="pic-item"><img src="${p.vImg}"></i>
+						{if p.iItemType == "1"}
+				    	<i class="gift-ico hero"></i>
+				    {elseif p.iItemType == "2"}
+				      <i class="gift-ico skin"></i>
+				    {/if}
+						<em class="days" ${p.IsShow}>${p.vDuration}</em>
+					</span>
+					<i class="sbg-cover" ${p.IsShow}></i>
+					{if p.iValue == "1"}
+						<i class="ts-cover"></i>
+					{/if}
+					<i class="gift-name" id="${p.vSerialNo}_txt" ${p.IsShow}>${p.vInfo}</i>
+					{if p.iType == "0"}
+						<span class="get-btn">${p.BtnGet}</span>
+					{elseif p.iType == "3"}
+						<em class="btn-spr gift-syned">已合成</em>
+					{else}
+						<em class="btn-spr gift-geted">${p.iAreaStr}</em>
+					{/if}
+				</a>
+			</li>
+			{forelse}
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none.png"><em class="giftnone">暂无任何<br>奖励</em></li>
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+				<li><img src="http://ossweb-img.qq.com/images/lol/act/a20170710stars/none_bg.png"></li>
+			{/for}
+		</ul>
+	</div>
+</textarea>
+
+  <textarea style="display:none" id="synlist_jst">
+	<div class="bd">
+  	<ul class="mix-info-list">
+  		{for p in list}
+  		<li id='syn_${p.vSerialNo}'>
+  			<span class='choose'>
+  				<a href="javascript:;" onclick="${p.FuncSyn}">添加</a>
+  			</span>
+  			<label for='1'>&nbsp;&nbsp;${p.vDuration}${p.vInfo}</label>
+  			${p.vAuto}
+  		</li>
+  		{forelse}
+				<li><span class='choose'></span><label for='1'>暂无道具</label></li>
+			{/for}
+  	</ul>
+  </div>
+  <div class="pagination">
+  	<a alt="上一页" class="uppage" href="javascript:;" onclick="${FuncLast}" ${BtnLast}>上一页</a><a alt="下一页" class="downpage" href="javascript:;" onclick="${FuncNext}" ${BtnNext}>下一页</a>
+  </div>
+</textarea>
+
+
+  <script>
+
+      var AllItem=[
+          64008
+          ,64007
+          ,222005
+          ,81005
+          ,77003
+          ,37006
+          ,5005
+          ,59005
+          ,23006
+          ,22006
+          ,1009
+          ,131002
+          ,92005
+          ,222002
+          ,55008
+          ,76007
+          ,1008
+          ,42006
+          ,69004
+          ,62003
+          ,67004
+          ,37004
+          ,91003
+          ,96005
+          ,64003
+          ,1001
+          ,9006
+          ,122003
+          ,99005
+          ,15005
+          ,61006
+          ,37007
+          ,62005
+          ,51010
+          ,25010
+          ,92006
+          ,32008
+          ,55007
+          ,115004
+          ,21007
+          ,1003
+          ,1004
+          ,23005
+          ,61005
+          ,24004
+          ,17003
+          ,104005
+          ,58006
+          ,89004
+          ,64005
+          ,104004
+          ,53007
+          ,24008
+          ,64006
+          ,67005
+          ,61004
+          ,81006
+          ,412004
+          ,76008
+          ,429002
+          ,91004
+          ,16004
+          ,113005
+          ,90005
+          ,9007
+          ,45007
+          ,120003
+          ,57004
+          ,76001
+          ,134004
+          ,150003
+          ,29007
+          ,143003
+          ,238002
+          ,27001
+          ,75004
+          ,76005
+          ,56004
+          ,107003
+          ,27007
+          ,119006
+          ,13008
+          ,21004
+          ,37003
+          ,18002
+          ,7003
+          ,74004
+          ,78004
+          ,17001
+          ,20002
+          ,32004
+          ,35003
+          ,41004
+          ,57003
+          ,79003
+          ,96004
+          ,9004
+          ,36007
+          ,20006
+          ,98006
+          ,3002
+          ,34004
+          ,8003
+          ,19001
+          ,36004
+          ,4002
+          ,4001
+          ,29003
+          ,15003
+          ,42001
+          ,78002
+          ,40005
+          ,25005
+          ,86006
+          ,126002
+          ,10006
+          ,63004
+          ,8005
+          ,31005
+          ,54006
+          ,45008
+          ,53006
+          ,143002
+          ,254002
+          ,103003
+          ,54005
+          ,37005
+          ,92004
+          ,110002
+          ,64004
+          ,121001
+          ,103004
+          ,115003
+          ,53011
+          ,110004
+          ,14005
+          ,18010
+          ,11009
+          ,119002
+          ,76006
+          ,39004
+          ,17006
+          ,13007
+          ,92003
+          ,55004
+          ,17005
+          ,23004
+          ,99006
+          ,17008
+          ,157003
+          ,238003
+          ,236006
+          ,114004
+          ,89008
+          ,421001
+          ,102005
+          ,122004
+          ,62004
+          ,7004
+          ,51006
+          ,157002
+          ,119003
+          ,68003
+          ,80006
+          ,1005
+          ,110003
+          ,429002
+          ,103005
+          ,202001
+          ,63005
+          ,64010
+          ,67006
+          ,222003
+          ,104003
+          ,119004
+          ,81007
+          ,15007
+          ,81008
+          ,96008
+          ,64001
+          ,114003
+          ,56005
+          ,266002
+          ,11005
+          ,122002
+          ,84005
+          ,32007
+          ,51005
+          ,117003
+          ,75005
+          ,34001
+          ,36003
+          ,17004
+          ,20004
+          ,84004
+          ,85006
+          ,107002
+          ,412003
+          ,67003
+          ,5004
+          ,254001
+          ,267002
+          ,105004
+          ,121002
+          ,268001
+          ,58005
+          ,222001
+          ,157001
+          ,19006
+          ,11003
+          ,24006
+          ,150002
+          ,245001
+          ,201002
+          ,8006
+          ,105009
+          ,203002
+          ,102006
+          ,163001
+          ,131003
+          ,127003
+          ,16006
+          ,121003
+          ,432005
+          ,38005
+          ,203001
+          ,126003
+          ,84007
+          ,115005
+          ,161002
+          ,20007
+          ,80007
+          ,62001
+          ,80004
+          ,421002
+          ,154002
+          ,117005
+          ,36008
+          ,254003
+          ,22007
+          ,111004
+          ,429001
+          ,4008
+          ,236002
+          ,79007
+          ,12007
+          ,412002
+          ,161001
+          ,112003
+          ,42005
+          ,67002
+          ,99001
+          ,122008
+          ,23007
+          ,134003
+          ,82005
+          ,11001
+          ,24012
+          ,103006
+          ,105008
+          ,39005
+          ,81003
+          ,39001
+          ,267003
+          ,77004
+          ,75006
+          ,16005
+          ,2003
+          ,16003
+          ,86004
+          ,102003
+          ,35006
+          ,25004
+          ,23002
+          ,4003
+          ,31002
+          ,57006
+          ,59003
+          ,84006
+          ,21002
+          ,42003
+          ,1006
+          ,25003
+          ,60003
+          ,41005
+          ,24007
+          ,238001
+          ,122001
+          ,131001
+          ,21006
+          ,201001
+          ,236001
+          ,114001
+          ,59004
+          ,134002
+          ,127002
+          ,150001
+          ,74005
+          ,133002
+          ,267001
+          ,92001
+          ,134001
+          ,21008
+          ,9008
+          ,136001
+          ,268002
+          ,120005
+          ,420001
+          ,54007
+          ,50001
+          ,92002
+          ,254004
+          ,19008
+          ,201003
+          ,79009
+          ,13009
+          ,110005
+          ,5006
+          ,76003
+          ,91001
+          ,91002
+          ,84003
+          ,245002
+          ,4009
+          ,35007
+          ,11002
+          ,56006
+          ,10008
+          ,27008
+          ,43005
+          ,12008
+          ,2005
+          ,266003
+          ,104006
+          ,86010
+          ,81002
+          ,58007
+          ,34006
+          ,31006
+          ,223002
+          ,161003
+          ,72003
+          ,30003
+          ,80005
+          ,105003
+          ,127001
+          ,40003
+          ,143001
+          ,1007
+          ,56001
+          ,154001
+          ,133001
+          ,102001
+          ,24005
+          ,82004
+          ,9005
+          ,85005
+          ,90004
+          ,223001
+          ,101004
+          ,432001
+          ,5003
+          ,38004
+          ,35002
+          ,63002
+          ,79005
+          ,2004
+          ,57005
+          ,28003
+          ,117001
+          ,104002
+          ,39002
+          ,22003
+          ,59002
+          ,110001
+          ,106002
+          ,106001
+          ,89001
+          ,120001
+          ,115002
+          ,25001
+          ,72004
+          ,33007
+          ,1002
+          ,8007
+          ,133003
+          ,26005
+          ,51002
+          ,79004
+          ,10002
+          ,13003
+          ,20001
+          ,98004
+          ,61003
+          ,14004
+          ,16002
+          ,36006
+          ,79006
+          ,19007
+          ,27005
+          ,69002
+          ,58003
+          ,3005
+          ,98003
+          ,115001
+          ,85004
+          ,20005
+          ,32003
+          ,38003
+          ,53005
+          ,41001
+          ,7002
+          ,68001
+          ,30004
+          ,82003
+          ,4004
+          ,23001
+          ,18005
+          ,57001
+          ,80003
+          ,112001
+          ,33002
+          ,27002
+          ,72001
+          ,69001
+          ,61001
+          ,55001
+          ,5002
+          ,84002
+          ,28001
+          ,54002
+          ,98001
+          ,18004
+          ,75001
+          ,98002
+          ,34003
+          ,36002
+          ,3001
+          ,10005
+          ,75002
+          ,74001
+          ,51001
+          ,44003
+          ,77002
+          ,89003
+          ,113002
+          ,113001
+          ,35005
+          ,15001
+          ,33003
+          ,54004
+          ,45006
+          ,120002
+          ,105002
+          ,111001
+          ,68001
+          ,31003
+          ,57001
+          ,80003
+          ,63001
+          ,101002
+          ,53001
+          ,35001
+          ,40001
+          ,56003
+          ,58002
+          ,82001
+          ,13005
+          ,29005
+          ,78001
+          ,82002
+          ,86001
+          ,43001
+          ,18004
+          ,84001
+          ,98002
+          ,34003
+          ,43002
+          ,26003
+          ,45003
+          ,12004
+          ,32002
+          ,36001
+          ,38002
+          ,16001
+          ,7001
+          ,85003
+          ,41002
+          ,68002
+          ,85002
+          ,79002
+          ,29002
+          ,77001
+          ,9002
+          ,80002
+          ,80001
+          ,19004
+          ,32001
+          ,42004
+          ,6002
+          ,13002
+          ,74003
+          ,96001
+          ,14003
+          ,26002
+          ,48002
+          ,74002
+          ,136
+          ,202
+          ,429
+          ,421
+          ,420
+          ,412
+          ,266
+          ,254
+          ,245
+          ,238
+          ,236
+          ,222
+          ,157
+          ,150
+          ,126
+          ,122
+          ,121
+          ,114
+          ,110
+          ,107
+          ,106
+          ,105
+          ,104
+          ,103
+          ,102
+          ,92
+          ,91
+          ,81
+          ,76
+          ,67
+          ,64
+          ,63
+          ,62
+          ,59
+          ,51
+          ,17
+          ,163
+          ,268
+          ,267
+          ,203
+          ,201
+          ,161
+          ,154
+          ,134
+          ,133
+          ,127
+          ,120
+          ,117
+          ,115
+          ,99
+          ,96
+          ,85
+          ,83
+          ,69
+          ,61
+          ,60
+          ,58
+          ,56
+          ,55
+          ,53
+          ,42
+          ,39
+          ,34
+          ,30
+          ,24
+          ,23
+          ,7
+          ,5
+          ,1
+          ,432
+          ,223
+          ,143
+          ,131
+          ,119
+          ,98
+          ,90
+          ,89
+          ,84
+          ,80
+          ,79
+          ,72
+          ,57
+          ,50
+          ,35
+          ,29
+          ,21
+          ,8
+          ,2
+          ,113
+          ,112
+          ,111
+          ,101
+          ,86
+          ,82
+          ,68
+          ,44
+          ,41
+          ,38
+          ,37
+          ,33
+          ,32
+          ,31
+          ,28
+          ,19
+          ,4
+          ,3
+          ,78
+          ,77
+          ,75
+          ,74
+          ,54
+          ,48
+          ,45
+          ,43
+          ,40
+          ,36
+          ,27
+          ,26
+          ,25
+          ,22
+          ,20
+          ,18
+          ,16
+          ,15
+          ,14
+          ,13
+          ,12
+          ,11
+          ,10
+          ,9
+          ,6
+      ];
+
+
+      var lock=0;
+      var level=0,lev;//0=最大机率，1=一般机率，2=最小机率，3=没有机率
+      var sjs = Math.floor(Math.random()*10)*50;
+      $("#iColorNum").text(sjs);
+      if(sjs>0){
+          alert('哇，兄台骨骼惊奇，获得'+sjs+'个河蟹陛下守卫，快去挥霍吧！');
+      }else{
+          alert('老夫掐指一算，你还是回去洗洗睡吧，别来抽奖了，扑街...');
+      }
+      $(".btn_btn").click(function(){
+          if(sjs>0){
+              $("#iColorNum").text(sjs-=10);
+          }else{
+              alert('都没魔法星尘还想抽?扑街...');
+              return false;
+          }
+          if(lock==0){
+              lock=1;
+              $(".pop_tc").show();
+              $("#GetItem2").show();
+              $("#GetItem2_info li").remove();
+              $(".ew").hide().css("right","195px");
+              $(".ew li").remove();
+              var index=0,parr=[];
+              function show(wz,lk,vall){
+                  if(vall==null){
+                      var oVs=parseInt(Math.random()*180);
+                      show(".ew ul",0,AllItem[oVs]);
+                      return;
+                  }
+                /*switch(level){
+                 case 0:
+                 lev = 63;//AllItem.length;
+                 break;
+                 case 1:
+                 //lev =
+                 }*/
+                  var getN = AllItem.indexOf(vall);
+                  var ttx = RALFSHEN_LOLHeroAndSkin[vall];
+                  var sj = parseInt(Math.random()*100);
+                  if(getN<505){
+                      ttx = "皮肤&nbsp;&nbsp;" + ttx;
+                  }else{
+                      ttx = "英雄&nbsp;&nbsp;" + ttx;
+                  }
+                  if(getN>180&&sj<35&&lk==1){
+                      ttx += "&nbsp;&nbsp;7天体验"
+                  }
+                  if(lk==0){
+                      $(wz).append('<li class="a'+vall+'" style="display:none"><div><img src="http://ossweb-img.qq.com/images/lol/appskin/'+AllItem[getN]+'.jpg"></div><span>'+ ttx+'</span></li>');
+                  }else{
+                      $(wz).append('<li class="a'+vall+'" style="display:none"><div><img src="http://ossweb-img.qq.com/images/lol/appskin/'+getImg(vall)+'.jpg"></div><span>'+ ttx+'</span></li>');
+                  }
+                  parr.push(vall);
+                  //console.log(getN+","+vall)
+                  if(getN<=63){
+                      $(".a"+vall).append("<i class='ts-cover'></i>");
+                  };
+              }
+              var newArr=new Array;
+              for (var i=0;i<AllItem.length;i++){
+                  newArr[i]=AllItem[i];
+              }
+              newArr.sort(function(){ return 0.5 - Math.random(); });
+              for (var i=0;i<10;i++){
+                  show("#GetItem2_info ul",1,newArr[i]);
+              }
+              var o=0;
+              var time = 	setInterval(function(){
+                  if(o<10){
+                      $("#GetItem2_info li").eq(o).fadeIn();
+                      o++;
+                  }else{
+                      show(".ew ul",0);
+                      $(".ew").show().animate({right:'9px'},300);
+                      $(".ew li").show()
+                      clearInterval(time);
+                      lock=0;
+                  }
+              },700)
+          }else{
+              alert("兄台别急，等等又不会怀孕...");
+          }
+        /*遍历添加已抽到皮肤
+         $("#syn_list li").each(function(i,o){
+         $(this).find("img").attr("src","http://ossweb-img.qq.com/images/lol/appskin/"+getImg(parr[i])+".jpg")
+         })*/
+
+      });
+      $(".x_hide").click(function(){
+          if(lock==0){
+              $("#GetItem2").hide();
+              $(".pop_tc").hide();
+          }else{
+              alert("兄台别急，等等又不会怀孕...");
+          }
+      });
+      function getImg(m){
+          if(m>= 1000){
+              return m;
+          }else{
+              return m*1000;
+          }
+      }
+
+  </script>
+  <script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html><!--[if !IE]>|xGv00|0935940d8ff99053e8c2423b29ac5cfd<![endif]-->
