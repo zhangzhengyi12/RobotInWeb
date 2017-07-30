@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfcf094f-8226-4bf3-8d32-9d044a271611" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/font/dinbold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/font/dinbold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/algorithm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/draw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/money.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/moneyGold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/render.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/scroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/skinJackpot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/title.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/vendor/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/font/dinbold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/font/dinbold.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/main.js" afterPath="$PROJECT_DIR$/app/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.ejs" afterPath="$PROJECT_DIR$/app/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/css/main.min.css" afterPath="$PROJECT_DIR$/server/public/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/js/cp.min.js" afterPath="$PROJECT_DIR$/server/public/js/cp.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/public/js/main.js" afterPath="$PROJECT_DIR$/server/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.ejs" afterPath="$PROJECT_DIR$/server/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/css.js" afterPath="$PROJECT_DIR$/tasks/css.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/app/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -54,7 +32,7 @@
       <file leaf-file-name="error.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/error.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="-4320">
               <caret line="1358" column="43" lean-forward="false" selection-start-line="1358" selection-start-column="43" selection-end-line="1358" selection-end-column="43" />
               <folding>
                 <marker date="1501422427171" expanded="true" signature="41012:41024" ph="..." />
@@ -68,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -78,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
-              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+              <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -87,8 +65,8 @@
       <file leaf-file-name="colors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/colors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            <state relative-caret-position="226">
+              <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc;n#getRamdomColor#0" expanded="false" />
               </folding>
@@ -124,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/tasks/pages.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -278,7 +256,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AUTO" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="resolve&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -391,12 +369,12 @@
       <workItem from="1500987379067" duration="445000" />
       <workItem from="1501135531460" duration="34344000" />
       <workItem from="1501228898050" duration="10885000" />
-      <workItem from="1501422476013" duration="13054000" />
+      <workItem from="1501422476013" duration="14001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67698000" />
+    <option name="totallyTimeSpent" value="68645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1452" height="876" extended-state="0" />
@@ -646,7 +624,7 @@
     <entry file="file://$PROJECT_DIR$/tasks/pages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -655,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/colors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="226">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc;n#getRamdomColor#0" expanded="false" />
           </folding>
@@ -686,7 +664,7 @@
     <entry file="file://$PROJECT_DIR$/app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -694,7 +672,7 @@
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -703,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/error.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="-4320">
           <caret line="1358" column="43" lean-forward="false" selection-start-line="1358" selection-start-column="43" selection-end-line="1358" selection-end-column="43" />
           <folding>
             <marker date="1501422427171" expanded="true" signature="41012:41024" ph="..." />
@@ -715,7 +693,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding />
         </state>
       </provider>
