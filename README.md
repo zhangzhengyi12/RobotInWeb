@@ -31,3 +31,6 @@
 源码
 
 [https://github.com/zhangzhengyi12/RobotInWeb](https://github.com/zhangzhengyi12/RobotInWeb)
+
+
+tips:其实拥有一定的bug,比如说当传过来的消息过多就可能导致文本溢出问题，毕竟我每个消息盒子的高度是固定的
